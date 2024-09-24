@@ -1,5 +1,8 @@
 name: AppSweep mobile application security testing 
-on: [pull_request_target] 
+on:
+ push:
+    branches:
+      - master
 jobs: 
     upload-app-to-appsweep: 
         runs-on: ubuntu-latest 
